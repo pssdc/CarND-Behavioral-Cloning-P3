@@ -1,4 +1,4 @@
-#**Behavioral Cloning** 
+# Behavioral Cloning
 
 The goals / steps of this project are the following:
 
@@ -8,6 +8,7 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
+
 ### Files submitted 
 
 My project includes the following files:
@@ -16,6 +17,9 @@ My project includes the following files:
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network
 * writeup_report.md summarizing the results
+* The training output for track 1 can be seen at the following link
+[![track1]()](https://www.youtube.com/watch?v=k0KYxMhgwv4)
+
 
 ### Model Architecture and Training Strategy
 
