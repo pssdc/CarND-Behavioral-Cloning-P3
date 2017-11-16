@@ -18,7 +18,7 @@ My project includes the following files:
 * model.h5 containing a trained convolution neural network
 * writeup_report.md summarizing the results
 * The training output for track 1 can be seen at the following link
-[![track1]()](https://www.youtube.com/watch?v=k0KYxMhgwv4)
+[![track1](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/youtube_track1.png)](https://www.youtube.com/watch?v=k0KYxMhgwv4)
 
 
 ### Model Architecture and Training Strategy
