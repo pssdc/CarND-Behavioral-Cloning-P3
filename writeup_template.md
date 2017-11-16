@@ -45,8 +45,13 @@ The model used an adam optimizer, so the learning rate was not tuned manually .
 
 Training data was chosen to keep the vehicle driving on the road. 
 * I used only center lane driving in my training. 
-* I generated the recovering from the left and right sides of the road wherever the car started to drift from the center and crashed. 
+* I generated the recovering from the left and right sides of the road wherever the car started to drift from the center and crashed. Below are some snapshots of the areas on the track where the car crashed. I did not add any extra recovery data. 
 * I found that the data with 0, 0, 0 angles did not make any difference in training. Hence to speed up my training, I removed all the images with 0, 0, 0 from the training set. 
+![recovery1]
+![recovery2]
+![recovery3]
+![recovery4]
+
 
 ###Model Architecture and Training Strategy
 
