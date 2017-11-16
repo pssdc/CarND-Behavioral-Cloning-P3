@@ -34,33 +34,19 @@ The model includes
 * Epochs used = 8.
 * The model used an Adam optimizer, so the learning rate was not tuned manually .
 * Total params used in training 329207.
-* Total images used = 
 
 
-####4. Appropriate training data
+#### Training the data
 
 Training data was chosen to keep the vehicle driving on the road. 
 * I used only center lane driving in my training. 
+* I resized the images to 30x60 pixels to speed up the training (iterations as well) and to reduce the size of resulting model.h5 file.
 * I generated the recovering from the left and right sides of the road wherever the car started to drift from the center and crashed. Below are some snapshots of the areas on the track where the car crashed. I did not add any extra recovery data. 
+* I ended up using images in total for training and validation. 
 * I found that the data with 0, 0, 0 angles did not make any difference in training. Hence to speed up my training, I removed all the images with 0, 0, 0 from the training set. 
 ![recovery1](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery6.png)
 ![recovery2](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery2.png)
 ![recovery3](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery5.png)
 ![recovery4](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery4.png)
 
-
-###Model Architecture and Training Strategy
-
-####1. Solution Design Approach
-
-I started the project with the code provided in the lesson. 
-The Keras network I used was also similar to the one that is provided in Keras lesson.  
-Removed all the data with 0,0,0 angles in driving_log.csv file.
-Imported and split the data into training (80%) and validation set (20%).
-Randomly shuffled the data to generalize the training.
-Used generator (as explained in the lesson) to efficiently used the RAM. 
-Used only the center image for training. Resized it to 80, 160 pixels.
-Used BatchNormalization to normalize the images. 
-Added the recovery images wherever the car drifted from the center and crashed. 
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
