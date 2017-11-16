@@ -27,7 +27,10 @@ My model architecture is as follows
 ![Architecture](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/model_layers.png)
 
 The model includes 
-
+* Three convolution layers (64, 32 and 16 filters and 3x3 kernels) with RELU activation function.
+* One max pooling layer with 2,2 pool size.
+* Three fully connected layers with RELU activation function.
+* Three Dropout layers - after several iterations I settled with 0.2, 0.4 and 0.4. 
 
 
 Total params	252219
