@@ -26,7 +26,7 @@ My model architecture is as follows
 
 ![Architecture](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/model_layers.png)
 
-
+The model includes 
 
 
 
@@ -44,9 +44,9 @@ The model used an adam optimizer, so the learning rate was not tuned manually .
 ####4. Appropriate training data
 
 Training data was chosen to keep the vehicle driving on the road. 
-I used only center lane driving in my training. 
-I generated the recovering from the left and right sides of the road wherever the car started to drift from the center and crashed. 
-I found that the data with 0, 0, 0 angles did not make any difference in training. Hence to speed up my training, I removed all the images with 0, 0, 0 from the training set. 
+* I used only center lane driving in my training. 
+* I generated the recovering from the left and right sides of the road wherever the car started to drift from the center and crashed. 
+* I found that the data with 0, 0, 0 angles did not make any difference in training. Hence to speed up my training, I removed all the images with 0, 0, 0 from the training set. 
 
 ###Model Architecture and Training Strategy
 
