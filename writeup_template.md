@@ -47,10 +47,10 @@ Training data was chosen to keep the vehicle driving on the road.
 * I used only center lane driving in my training. 
 * I generated the recovering from the left and right sides of the road wherever the car started to drift from the center and crashed. Below are some snapshots of the areas on the track where the car crashed. I did not add any extra recovery data. 
 * I found that the data with 0, 0, 0 angles did not make any difference in training. Hence to speed up my training, I removed all the images with 0, 0, 0 from the training set. 
-![recovery1]
-![recovery2]
-![recovery3]
-![recovery4]
+![recovery1]( https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery1.png)
+![recovery2](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery2.png)
+![recovery3](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery3.png)
+![recovery4](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery4.png)
 
 
 ###Model Architecture and Training Strategy
