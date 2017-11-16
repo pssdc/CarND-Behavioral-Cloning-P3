@@ -14,10 +14,11 @@ The goals / steps of this project are the following:
 My project includes the following files:
 
 * model.py contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
-* drive.py for driving the car in autonomous mode
-* model.h5 containing a trained convolution neural network
-* writeup_report.md summarizing the results
-* The training output for track 1 can be seen at the following link
+* drive.py for driving the car in autonomous mode.
+* model.h5 containing a trained convolution neural network.
+* writeup_report.md summarizing the results.
+* The training output for track 1 can be seen at the following link.
+
 [![track1](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/youtube_track1.png)](https://www.youtube.com/watch?v=k0KYxMhgwv4)
 
 
@@ -33,14 +34,14 @@ The model includes
 * Three fully connected layers with RELU activation function.
 * Three Dropout layers - after several iterations I settled with 0.2, 0.4 and 0.4 to reduce the overfitting.
 * Epochs used = 8.
-* The model used an Adam optimizer, so the learning rate was not tuned manually .
+* The model used an Adam optimizer, so the learning rate was not tuned manually.
 * Total params used in training 329207.
 
 
 #### Training the data
 
 Training data was chosen to keep the vehicle driving on the road. 
-* I used only center lane driving in my training. 
+* I used only center lane driving in my training data. 
 * I resized the images to 30x60 pixels to speed up the training (iterations as well) and to reduce the size of resulting model.h5 file.
 * I generated the recovering from the left and right sides of the road wherever the car started to drift from the center and crashed. Below are some snapshots of the areas on the track where the car crashed. I did not add any extra recovery data. 
 * I ended up using 5241 images in my dataset. I am just counting the center images as I did not use left or right image. Also note that this is only for the left track. 
