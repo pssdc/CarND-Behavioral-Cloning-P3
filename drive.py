@@ -1,9 +1,11 @@
 import argparse
+from scipy.misc import imresize
 import base64
 from datetime import datetime
 import os
 import shutil
-
+import sys
+import keras
 import numpy as np
 import socketio
 import eventlet
@@ -61,6 +63,10 @@ def telemetry(sid, data):
         imgString = data["image"]
         image = Image.open(BytesIO(base64.b64decode(imgString)))
         image_array = np.asarray(image)
+        image_array = imresize(image_array, (30, 60, 3))
+        transformed_image_array = image_array[None, :, :, :]
+
+
         steering_angle = float(model.predict(image_array[None, :, :, :], batch_size=1))
 
         throttle = controller.update(float(speed))
