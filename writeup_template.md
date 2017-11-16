@@ -24,7 +24,7 @@ My project includes the following files:
 
 My model architecture is as follows
 
-(https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/model_layers.png)
+![Architecture](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/model_layers.png)
 
 
 
