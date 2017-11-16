@@ -9,16 +9,16 @@ Test that the model successfully drives around track one without leaving the roa
 Summarize the results with a written report
 Rubric Points
 
-###Files Submitted & Code Quality
+### Files Submitted & Code Quality
 
-####1. Submission includes all required files and can be used to run the simulator in autonomous mode
+#### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
 
 My project includes the following files:
 
-model.py containing the script to create and train the model
-drive.py for driving the car in autonomous mode
-model.h5 containing a trained convolution neural network
-writeup_report.md summarizing the results
+* model.py containing the script to create and train the model
+* drive.py for driving the car in autonomous mode
+* model.h5 containing a trained convolution neural network
+* writeup_report.md summarizing the results
 
 ####2. Submission includes functional code Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing
 
