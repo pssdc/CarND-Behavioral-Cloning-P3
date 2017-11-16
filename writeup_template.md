@@ -30,19 +30,11 @@ The model includes
 * Three convolution layers (64, 32 and 16 filters and 3x3 kernels) with RELU activation function.
 * One max pooling layer with 2,2 pool size.
 * Three fully connected layers with RELU activation function.
-* Three Dropout layers - after several iterations I settled with 0.2, 0.4 and 0.4. 
+* Three Dropout layers - after several iterations I settled with 0.2, 0.4 and 0.4 to reduce the overfitting.
+* Epochs used = 8.
+* The model used an Adam optimizer, so the learning rate was not tuned manually .
+* Total params used in training 1025733
 
-
-Total params	252219
-####2. Attempts to reduce overfitting in the model
-
-The model contains three dropout layers in order to reduce overfitting (model.py lines 64, 84, 91).
-
-The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
-
-####3. Model parameter tuning
-
-The model used an adam optimizer, so the learning rate was not tuned manually .
 
 ####4. Appropriate training data
 
