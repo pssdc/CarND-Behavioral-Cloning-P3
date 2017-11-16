@@ -42,11 +42,13 @@ Training data was chosen to keep the vehicle driving on the road.
 * I used only center lane driving in my training. 
 * I resized the images to 30x60 pixels to speed up the training (iterations as well) and to reduce the size of resulting model.h5 file.
 * I generated the recovering from the left and right sides of the road wherever the car started to drift from the center and crashed. Below are some snapshots of the areas on the track where the car crashed. I did not add any extra recovery data. 
-* I ended up using images in total for training and validation. 
+* I ended up using 5241 images in my dataset. I am just counting the center images as I did not use left or right image. Also note that this is only for the left track. 
 * I found that the data with 0, 0, 0 angles did not make any difference in training. Hence to speed up my training, I removed all the images with 0, 0, 0 from the training set. 
 ![recovery1](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery6.png)
 ![recovery2](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery2.png)
 ![recovery3](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery5.png)
 ![recovery4](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/recovery4.png)
+
+Overall the project was very challanging and took me 3 weeks to get a handle on it. I could have improved the model by clipping the image add distortion etc but I ran out of time. I plan to redo this project again and make it more generalized. 
 
 
