@@ -24,7 +24,7 @@ My project includes the following files:
 
 My model architecture is as follows
 
-![Architecture](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/model_layers.png)
+![Architecture](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/layers.png)
 
 The model includes 
 * Three convolution layers (64, 32 and 16 filters and 3x3 kernels) with RELU activation function.
@@ -33,7 +33,8 @@ The model includes
 * Three Dropout layers - after several iterations I settled with 0.2, 0.4 and 0.4 to reduce the overfitting.
 * Epochs used = 8.
 * The model used an Adam optimizer, so the learning rate was not tuned manually .
-* Total params used in training 1025733
+* Total params used in training 329207.
+* Total images used = 
 
 
 ####4. Appropriate training data
