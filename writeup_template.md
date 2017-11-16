@@ -17,6 +17,7 @@ My project includes the following files:
 * drive.py for driving the car in autonomous mode.
 * model.h5 containing a trained convolution neural network.
 * writeup_report.md summarizing the results.
+* video.mp4 - A video recording of vehicle driving autonomously at least one lap around the track.
 * The training output for track 1 can be seen at the following link.
 
 [![track1](https://github.com/pssdc/CarND-Behavioral-Cloning-P3/blob/master/youtube_track1.png)](https://www.youtube.com/watch?v=k0KYxMhgwv4)
